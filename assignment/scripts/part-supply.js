@@ -26,7 +26,7 @@ console.log('4. Removed item:', supplyChanges.pop() );
 
 // 5. A delivery of 25 more parts arrived. Add the value 25 to the end of the array
 supplyChanges.push(25)
-console.log('Adding to supplyChanges.', supplyChanges);
+console.log('Adding to supplyChanges', supplyChanges);
 
 
 // 6. Write a `for` loop that shows each value in the 'supplyChanges' array
@@ -39,6 +39,8 @@ console.log('6. Showing supplyChanges...');
 for( let i = 0; i < supplyChanges.length; i++) {
 
   let x = supplyChanges[i]
+
+console.log( 'Value in SupplyChanges', x );
 
   if( x > 0 ){
     console.log(`Added ${x} parts.` );
@@ -58,8 +60,26 @@ console.log('---  Stretch Goals  ---');
 // 7. Rewrite the `for` loop from #6 as a `for of` loop.
 console.log('7. Showing supplyChanges with "for of" loop');
 
+let value = supplyChanges
+for( let value of supplyChanges ) {
+console.log( 'List of SupplyChanges', value );
+
+    if( value > 0 ){
+      console.log( `Added ${value} parts.` );
+    }
+    if( value === 0 ){
+      console.log( 'No Change' );
+    }
+    if( value < 0 ){
+      console.log( `Removed ${value} parts` );
+    }
+
+}
+
 // 8. Rewrite the `for` loop from #6 as a `while` loop.
 console.log('8. Showing supplyChanges with "while" loop');
+
+
 
 
 // 9. Write a loop to determine the total number of parts available by
