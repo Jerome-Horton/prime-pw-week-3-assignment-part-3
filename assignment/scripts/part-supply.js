@@ -62,7 +62,7 @@ console.log('7. Showing supplyChanges with "for of" loop');
 
 let value = supplyChanges
 for( let value of supplyChanges ) {
-console.log( 'List of SupplyChanges', value );
+console.log( 'List of SupplyChanges:', value );
 
     if( value > 0 ){
       console.log( `Added ${value} parts.` );
@@ -79,6 +79,20 @@ console.log( 'List of SupplyChanges', value );
 // 8. Rewrite the `for` loop from #6 as a `while` loop.
 console.log('8. Showing supplyChanges with "while" loop');
 
+let count = supplyChanges
+while( count=0; i<count.length){
+  console.log( 'Counting Supply Changes', count );
+
+  if( count > 0 ){
+    console.log( `Added ${count} parts.` );
+  }
+  if( count === 0 ){
+    console.log( 'No Change' );
+  }
+  if( count < 0 ){
+    console.log( `Removed ${count} parts` );
+  }
+}
 
 
 
